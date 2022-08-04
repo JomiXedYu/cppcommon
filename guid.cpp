@@ -63,7 +63,7 @@ bool guid_t::operator==(guid_t right) const
 
 guid_t::operator bool() const
 {
-    return this->is_empty();
+    return !this->is_empty();
 }
 
 std::string guid_t::to_string() const
