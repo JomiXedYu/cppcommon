@@ -61,6 +61,10 @@ bool guid_t::operator==(guid_t right) const
     return x == right.x && y == right.y && z == right.z && w == right.w;
 }
 
+guid_t::operator bool() const
+{
+    return this->is_empty();
+}
 
 std::string guid_t::to_string() const
 {

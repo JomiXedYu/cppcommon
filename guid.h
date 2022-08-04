@@ -18,5 +18,5 @@ public:
     std::string to_string() const;
     bool is_empty() const;
     bool operator==(guid_t right) const;
-
+    operator bool() const;
 };
